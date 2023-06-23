@@ -25,29 +25,33 @@ const Login = () => {
     }
   };
   return (
-    <div>
-      {/* <Nav /> */}
-      <div className="nav-ul"></div>
-      <div className="login">
-        <input
-          className="inputBox"
-          type="email"
-          value={email}
-          placeholder="Enter Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          className="inputBox"
-          value={password}
-          type="password"
-          placeholder="Enter Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={handleLogin} className="appButton" type="button">
-          Login
-        </button>
+    <>
+      <div>
+        {/* <Nav /> */}
+
+        <div className="nav-ul"></div>
+
+        <div className="login">
+          <input
+            className="inputBox"
+            type="email"
+            value={email}
+            placeholder="Enter Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className="inputBox"
+            value={password}
+            type="password"
+            placeholder="Enter Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button onClick={handleLogin} className="appButton" type="button">
+            Login
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

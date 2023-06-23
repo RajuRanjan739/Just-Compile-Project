@@ -1,6 +1,6 @@
-.App {
+ .App {
   text-align: center;
-}
+} 
 
 .nav-ul{
   
@@ -43,6 +43,27 @@
   width: 100px;
   background-color: aquamarine;
   cursor: pointer;
+}
+
+.home-pic{
+  width: 450px;
+  height: 500px;
+}
+
+.home-photo{
+  margin-top: 5%;
+  height: 80px;
+  width: 500px;
+  margin-left: 200px;
+  }
+
+.name{
+  margin-left: 10%;
+}
+
+.btn btn-secondary me-4 {
+  display: inline;
+  margin-left: 60%;
 }
 
 
