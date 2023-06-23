@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Nav from "./Nav";
 
 const Todo = () => {
   const [todos, setTodos] = useState([]);
   const [task, setTask] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:5000/todo")
@@ -34,7 +36,7 @@ const Todo = () => {
     <div>
       {/* <Nav /> */}
       <div className="nav-ul">
-        <button className="logout-button">Logout</button>
+        <button className="logout-button" onClick={(e) => navigate("/")} >Logout</button>
       </div>
 
       <h1>All Notes</h1>
